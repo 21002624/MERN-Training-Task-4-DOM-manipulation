@@ -9,7 +9,7 @@ document.getElementById("box").addEventListener('click',(e)=>{
         container.setAttribute("id","container");
         const h2 = document.createElement("h2");
         h2.setAttribute("class","text");
-        h2.textContent="you clicked Square"
+        h2.textContent="you clicked Square";
         const input =document.createElement("input")
         input.setAttribute("class","input");
         input.setAttribute("id","side");
@@ -90,7 +90,7 @@ document.getElementById("box").addEventListener('click',(e)=>{
         container.setAttribute("id","container");
         const h2 = document.createElement("h2");
         h2.setAttribute("class","text");
-        h2.textContent="you clicked Square"
+        h2.textContent="you clicked Circle"
         const input =document.createElement("input")
         input.setAttribute("class","input");
         input.setAttribute("id","side");
@@ -171,7 +171,7 @@ document.getElementById("box").addEventListener('click',(e)=>{
         container.setAttribute("id","container");
         const h2 = document.createElement("h2");
         h2.setAttribute("class","text");
-        h2.textContent="you clicked Square"
+        h2.textContent="you clicked Triangle"
         const input =document.createElement("input")
         input.setAttribute("class","input");
         input.setAttribute("id","side");
