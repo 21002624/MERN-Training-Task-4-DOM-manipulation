@@ -3,15 +3,16 @@ document.getElementById("box").addEventListener('click',(e)=>{
     const shape=e.target.id;
     const box=document.getElementById("box");
     box.remove();
-    console.log(e.target.id);
+    // console.log(e.target.id);
     if(shape==='square'){
         const container=document.createElement("div");
         container.setAttribute("id","container");
         const h2 = document.createElement("h2");
         h2.setAttribute("class","text");
-        h2.textContent="you clicked Square";
+        h2.textContent="you clicked Square"
         const input =document.createElement("input")
         input.setAttribute("class","input");
+        input.placeholder="Enter value";
         input.setAttribute("id","side");
         const btn=document.createElement("button");
         btn.textContent="Calculate";
@@ -90,10 +91,11 @@ document.getElementById("box").addEventListener('click',(e)=>{
         container.setAttribute("id","container");
         const h2 = document.createElement("h2");
         h2.setAttribute("class","text");
-        h2.textContent="you clicked Circle"
+        h2.textContent="you clicked Circle";
         const input =document.createElement("input")
         input.setAttribute("class","input");
         input.setAttribute("id","side");
+        input.placeholder="Enter Radius";
         const btn=document.createElement("button");
         btn.textContent="Calculate";
         btn.addEventListener("click",(e)=>{
@@ -171,13 +173,15 @@ document.getElementById("box").addEventListener('click',(e)=>{
         container.setAttribute("id","container");
         const h2 = document.createElement("h2");
         h2.setAttribute("class","text");
-        h2.textContent="you clicked Triangle"
+        h2.textContent="you clicked Triangle";
         const input =document.createElement("input")
         input.setAttribute("class","input");
         input.setAttribute("id","side");
+        input.placeholder="Enter Base";
         const input1 =document.createElement("input")
         input.setAttribute("class","input1");
         input1.setAttribute("id","side1");
+        input1.placeholder="Enter Height";
         const btn=document.createElement("button");
         btn.textContent="Calculate";
         btn.addEventListener("click",(e)=>{
